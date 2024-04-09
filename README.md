@@ -12,7 +12,6 @@
     This project is about programming a function that returns a line read from a file descriptor.
   </p>
   <br>
-  <br>
 </div>
 
 <!-- TABLE OF CONTENTS -->
