@@ -1,7 +1,7 @@
 
 <a name="readme-top"></a>
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT SUMMARY -->
 <div align="center">
 
   <h3 align="center">get_next_line</h3>
