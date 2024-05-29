@@ -6,7 +6,7 @@
 /*   By: kmorin <kmorin@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 10:20:27 by kmorin            #+#    #+#             */
-/*   Updated: 2023/10/24 09:40:00 by kmorin           ###   ########.fr       */
+/*   Updated: 2024/05/29 09:18:11 by kmorin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,15 +126,16 @@ int	main(void)
 	fd1 = open("test.txt", O_RDONLY);
 	fd2 = open("test2.txt", O_RDONLY);
 	fd3 = open("test3.txt", O_RDONLY);
+	printf("\tfirst fd: %i\t\n", fd1);
 	i = 0;
-	while (i != 3)
+	while (i != 10)
 	{
 		line = get_next_line(fd1);
 		printf("%s", line);
 		free(line);
 		i++;
 	}
-	printf("\n\tnext fd\t\n");
+	printf("\n\n\tsecond fd: %i\t\n", fd2);
 	i = 0;
 	while (i != 1)
 	{
@@ -143,7 +144,7 @@ int	main(void)
 		free(line);
 		i++;
 	}
-	printf("\n\tnext fd\t\n");
+	printf("\n\n\tthird fd: %i\t\n", fd3);
 	i = 0;
 	while (i != 7)
 	{

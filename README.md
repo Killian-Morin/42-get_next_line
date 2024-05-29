@@ -25,6 +25,21 @@ This project will not only allow you to add a very convenient function to your c
 
 This is all coded in C.
 
+If you want to run this project, you first have to decomment the `main()` that I put in the get_next_line.c and get_next_line_bonus.c files.
+
+To run the code without the bonus:
+```sh
+  gcc -Wall -Werror -Wextra get_next_line.c get_next_line_utils.c && ./a.out
+```
+If you want to change the `BUFFER_SIZE` without modifiying the get_next_line.h file, you can compile the code with following flag: `-D BUFFER_SIZE=n` with `n` as the buffer size that will be used.
+When this variable is not set at the compilation it takes the default one: 10.
+
+To compile with the bonus:
+```sh
+  gcc -Wall -Werror -Wextra get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+```
+The same process can be done to update the `BUFFER_SIZE`.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SOURCES -->
